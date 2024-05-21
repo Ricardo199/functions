@@ -7,7 +7,7 @@ window.onload = function () {
 
     document.getElementById('submit').onclick = function () {
 
-        var text = document.getElementById("txtPosition").value;
+        var text = document.getElementById("txtQuantity").value;
 
         const array = text.split(",");
 
