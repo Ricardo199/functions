@@ -20,16 +20,16 @@ window.onload = function () {
 
         Grid(a, b);
 
+    }
+    
+    document.getElementById('reset').onclick = function () {
+        var a = 15;
+        var b = 15;
 
-        document.getElementById('reset').onclick = function () {
-            var a = 15;
-            var b = 15;
-
-            Grid(a, b);
-        }
-
+        Grid(a, b);
     }
 }
+
 function Grid(a, b) {
     let row = a;
     let column = b;
