@@ -14,17 +14,9 @@ window.onload = function () {
         a = parseInt(array[0]);
         b = parseInt(array[1]);
 
-        if (isNaN(a) && isNaN(b)) {
-            a = 1;
-            b = 1;
-        } else {
-
-            if (isNaN(a)) {
-                a = 1;
-            } else if (isNaN(b)) {
+        if (isNaN(b)) {
                 b = 1;
             }
-        }
 
         Grid(a, b);
 
