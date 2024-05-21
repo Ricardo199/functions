@@ -11,13 +11,13 @@ function Grid(a, b) {
     }
 
     //making the variables more understandable
-    let row = a;
-    let column = b;
-    let table = "";
+    var row = a;
+    var column = b;
+    var table = "";
     //nested for to make the table at different paces
-    for (let i = 1; i <= row; i++) {
+    for (var i = 1; i <= row; i++) {
         table += "<tr>";
-        for (let j = 1; j <= column; j++) {
+        for (var j = 1; j <= column; j++) {
             table += "<td class='cell'>" + i + "," + j + "</td>";
         }
         table += "</tr>";
@@ -30,8 +30,8 @@ function Grid(a, b) {
 window.onload = function () {
 
     //assigning default values of the variables
-    var a = 15;
-    var b = 15;
+    let a = 15;
+    let b = 15;
 
     //passing the variables with default values to the Grid method
     Grid(a, b);
