@@ -1,3 +1,17 @@
+function Grid(a, b) {
+    let row = a;
+    let column = b;
+    let table = "";
+    for (let i = 1; i <= row; i++) {
+        table += "<tr>";
+        for (let j = 1; j <= column; j++) {
+            table += "<td class='cell'>" + i + "," + j + "</td>";
+        }
+        table += "</tr>";
+    }
+    document.getElementById("table").innerHTML = table;
+}
+
 window.onload = function () {
 
     var a = 15;
@@ -28,18 +42,4 @@ window.onload = function () {
 
         Grid(a, b);
     }
-}
-
-function Grid(a, b) {
-    let row = a;
-    let column = b;
-    let table = "";
-    for (let i = 1; i <= row; i++) {
-        table += "<tr>";
-        for (let j = 1; j <= column; j++) {
-            table += "<td class='cell'>" + i + "," + j + "</td>";
-        }
-        table += "</tr>";
-    }
-    document.getElementById("table").innerHTML = table;
 }
