@@ -1,4 +1,11 @@
 function Grid(a, b) {
+    if (isNaN(b)) {
+        b = 1;
+    }
+    if (isNaN(a)) {
+        a = 1;
+    }
+
     let row = a;
     let column = b;
     let table = "";
@@ -28,17 +35,13 @@ window.onload = function () {
         a = parseInt(array[0]);
         b = parseInt(array[1]);
 
-        if (isNaN(b)) {
-                b = 1;
-            }
-
         Grid(a, b);
 
     }
     
     document.getElementById('reset').onclick = function () {
-        var a = 15;
-        var b = 15;
+        a = 15;
+        b = 15;
 
         Grid(a, b);
     }
