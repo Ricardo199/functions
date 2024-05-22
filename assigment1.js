@@ -6,7 +6,7 @@ Date: 21/05/2024 (date of last modification)
 //grid function
 function Grid(a, b) {
 
-    //checking if the variables aren't null
+    //checking if the variables aren null
     if (isNaN(b)) {
         b = 1;
     }
@@ -37,7 +37,7 @@ window.onload = function () {
 
     //passing the variables with default values to the Grid method
     Grid(a, b);
-    
+
     //the submit button
     document.getElementById('submit').onclick = function () {
 
@@ -55,7 +55,7 @@ window.onload = function () {
         Grid(a, b);
 
     };
-    
+
     //the reset button
     document.getElementById('reset').onclick = function () {
 
