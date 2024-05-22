@@ -3,7 +3,6 @@
 //grid function
 function Grid(a, b) {
 
-    'use strict';
     //checking if the variables aren't null
     if (isNaN(b)) {
         b = 1;
@@ -28,8 +27,6 @@ function Grid(a, b) {
 
 //to avoid error this js file is loaded after the main html file is rendered
 window.onload = function () {
-    
-    'use strict';
 
     //assigning default values of the variables
     let a = 15;
