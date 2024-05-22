@@ -2,6 +2,8 @@
 
 //grid function
 function Grid(a, b) {
+
+    'use strict';
     //checking if the variables aren't null
     if (isNaN(b)) {
         b = 1;
@@ -11,9 +13,7 @@ function Grid(a, b) {
     }
 
     //making the variables more understandable
-    var row = a;
-    var column = b;
-    var table = "";
+    var row = a, column = b, table = "";
     //nested for to make the table at different paces
     for (var i = 1; i <= row; i++) {
         table += "<tr>";
@@ -28,6 +28,8 @@ function Grid(a, b) {
 
 //to avoid error this js file is loaded after the main html file is rendered
 window.onload = function () {
+    
+    'use strict';
 
     //assigning default values of the variables
     let a = 15;
@@ -52,7 +54,7 @@ window.onload = function () {
         //passing the variables to the Grid method
         Grid(a, b);
 
-    }
+    };
     
     //the reset button
     document.getElementById('reset').onclick = function () {
@@ -63,5 +65,5 @@ window.onload = function () {
 
         //sending the values to be rendered as a grid
         Grid(a, b);
-    }
-}
+    };
+};
