@@ -6,7 +6,7 @@ Date: 21/05/2024 (date of last modification)
 //grid function
 function Grid(a, b) {
 
-    //checking if the variables aren null
+    //checking if the variables aren't null
    if(isNaN(a) || isNaN(b)){
         alert("please only use numbers");
         a=15;
