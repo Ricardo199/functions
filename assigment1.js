@@ -7,12 +7,11 @@ Date: 21/05/2024 (date of last modification)
 function Grid(a, b) {
 
     //checking if the variables aren null
-    if (isNaN(b)) {
-        b = 1;
-    }
-    if (isNaN(a)) {
-        a = 1;
-    }
+   if(isNaN(a) || isNaN(b)){
+        alert("please only use numbers");
+        a=15;
+        b=15;
+   }
 
     //making the variables more understandable
     var row = a, column = b, table = "";
