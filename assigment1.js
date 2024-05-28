@@ -1,6 +1,6 @@
 /* this file receives two integer variables and returns a grid 
 Author: Ricardo Burgos
-Date: 21/05/2024 (date of last modification)
+Date: 28/05/2024 (date of last modification)
 */
 
 //grid function
