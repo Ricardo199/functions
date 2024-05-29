@@ -8,7 +8,7 @@ function Grid(a, b) {
 
     //checking if the variables aren't null
    if(isNaN(a) || isNaN(b)){
-        alert("please only use numbers, no spaces in between comma and numbers or in any other place");
+        alert("please only use numbers, no spaces in between comma and numbers or anywhere else");
         a=15;
         b=15;
    }
