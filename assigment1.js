@@ -13,7 +13,7 @@ function Grid(a, b) {
         b=15;
    }
 
-    //making the variables more understandable
+    //making the variables more understandable and declaring table
     var row = a, column = b, table = "";
     //nested for to make the table at different paces
     for (var i = 1; i <= row; i++) {
